@@ -224,11 +224,6 @@ if __name__ == "__main__":
         #Calculate and generate the amortization schedule for the other payment types
         else:
             df = calcIR_AP.amortPay_Schedule(principalAmount, numPay, 0, 0.0)
-
-        #Calculate the total number of payments for the mortgage term
-        #Trim the dataframe to include only the payments within the mortgage term
-        keepRows = termYears * numPay
-        df = df.iloc[:keepRows].copy()
         
         #Create new Excel sheet inside the workbook
         ws = wb.create_sheet(title=paymentName)
