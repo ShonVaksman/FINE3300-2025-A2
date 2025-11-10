@@ -218,11 +218,11 @@ if __name__ == "__main__":
                 if sumAvg > -0.05:
                     sumAvg = 0.0
 
-        #Round the average change to one decimal place
-        formattedChange = round(sumAvg, 1)
+            #Round the average change to one decimal place
+            formattedChange = round(sumAvg, 1)
 
-        #Print the jurisidiction name, item name, and its corresponding average percent change
-        print("{:<25} {:<35} {:>6.1f}%".format(jusName, itemName, formattedChange))    
+            #Print the jurisidiction name, item name, and its corresponding average percent change
+            print("{:<25} {:<35} {:>6.1f}%".format(jusName, itemName, formattedChange))    
 
 #==========
 #QUESTION 4
